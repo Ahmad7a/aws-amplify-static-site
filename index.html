@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ahmad Al Arfaj | Cybersecurity Analyst</title>
+    <meta name="description" content="Portfolio of Ahmad Al Arfaj — Cybersecurity Analyst with 1 year of experience in Cybersecurity and Patch Management.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">AA</a>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+                <!-- Moon icon (default for dark) -->
+                <svg class="icon icon-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                    <path fill="currentColor" d="M21.64 13A9 9 0 0 1 11 2.36 1 1 0 0 0 9.7 3.7 7 7 0 1 0 20.3 14.3 1 1 0 0 0 21.64 13z"/>
+                </svg>
+                <!-- Sun icon (shown in light) -->
+                <svg class="icon icon-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                    <path fill="currentColor" d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zm10.48 0l1.79-1.8-1.41-1.41-1.8 1.79 1.42 1.42zM12 4h-1V1h2v3h-1zm0 16h-1v3h2v-3h-1zM4 11H1v2h3v-2zm19 0h-3v2h3v-2zM6.76 19.16l-1.42 1.42-1.79-1.8 1.41-1.41 1.8 1.79zM19.16 17.24l1.8 1.79-1.41 1.41-1.79-1.8 1.4-1.4zM12 8a4 4 0 100 8 4 4 0 000-8z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Ahmad Al Arfaj</h1>
+                    <p class="subtitle">Cybersecurity Analyst</p>
+                    <p class="tagline">1 year of hands-on experience in Cybersecurity and Patch Management.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#contact">Get in touch</a>
+                        <a class="btn ghost" href="#projects">View projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>
+                    I’m a Cybersecurity analyst focused on keeping systems secure and up to date. My recent work centers on
+                    vulnerability management and reliable patch deployment, ensuring endpoints and servers are protected
+                    without disrupting business operations.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Patch Management (assessment, rollout, verification)</li>
+                    <li>Vulnerability Management (scanning, prioritization, remediation)</li>
+                    <li>Endpoint Security & Hardening</li>
+                    <li>SIEM Monitoring & Triage</li>
+                    <li>Incident Response basics</li>
+                    <li>Change Management & Documentation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Patch Deployment Playbook</h3>
+                        <p>Created a lightweight playbook for monthly patch cycles covering testing, rollout, and rollback steps.</p>
+                        <div class="meta">Role: Owner • Focus: Patch Management</div>
+                    </article>
+                    <article class="card">
+                        <h3>Vulnerability Triage Workflow</h3>
+                        <p>Streamlined prioritization based on severity, exploit availability, and asset criticality to reduce time-to-fix.</p>
+                        <div class="meta">Role: Contributor • Focus: Vulnerability Management</div>
+                    </article>
+                    <article class="card">
+                        <h3>Endpoint Hardening Checklist</h3>
+                        <p>Documented a practical checklist for secure baselines and continuous compliance.</p>
+                        <div class="meta">Role: Owner • Focus: Endpoint Security</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Have a question or opportunity? Send me a message and I’ll get back to you.</p>
+                <!-- Set data-to to your email. Optional: set data-endpoint to a backend URL to receive form posts. -->
+                <form id="contact-form" class="contact-form" data-to="ahmad@example.com" data-endpoint="">
+                    <div class="grid two">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" required minlength="2" placeholder="Your name">
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" required placeholder="you@example.com">
+                        </label>
+                    </div>
+                    <label>
+                        <span>Subject</span>
+                        <input type="text" name="subject" placeholder="Subject (optional)">
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="6" required placeholder="How can I help?"></textarea>
+                    </label>
+                    <!-- Honeypot field to deter bots -->
+                    <input type="text" name="company" class="hp" autocomplete="off" tabindex="-1" aria-hidden="true">
+                    <button type="submit" class="btn primary">Send message</button>
+                    <p id="form-status" role="status" aria-live="polite" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Ahmad Al Arfaj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
